@@ -6,7 +6,9 @@ function TodoForm(props) {
   const inputRef = useRef(null);
 
   useEffect(() => {
+
     inputRef.current.focus();
+
   });
 
   const handleChange = e => {
@@ -51,6 +53,7 @@ function TodoForm(props) {
           />
           <button onClick={handleSubmit} className='todo-button'>
             Add todo
+            
           </button>
         </>
       )}
